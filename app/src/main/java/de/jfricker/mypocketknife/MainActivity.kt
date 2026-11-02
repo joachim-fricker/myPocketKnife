@@ -13,6 +13,7 @@ import androidx.compose.runtime.setValue
 import de.jfricker.mypocketknife.home.HomeScreen
 import de.jfricker.mypocketknife.home.Tool
 import de.jfricker.mypocketknife.tools.currency.CurrencyScreen
+import de.jfricker.mypocketknife.tools.joke.JokeScreen
 import de.jfricker.mypocketknife.tools.moon.MoonScreen
 import de.jfricker.mypocketknife.ui.theme.MyPocketKnifeTheme
 
@@ -43,7 +44,6 @@ fun PocketKnifeApp() {
         null -> HomeScreen(onOpen = { current = it })
         Tool.CURRENCY -> CurrencyScreen(onBack = back)
         Tool.MOON -> MoonScreen(onBack = back)
-        // Witz des Tages folgt
-        else -> HomeScreen(onOpen = { current = it })
+        Tool.JOKE -> JokeScreen(onBack = back)
     }
 }

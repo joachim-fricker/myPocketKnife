@@ -9,5 +9,5 @@ enum class Tool(
 ) {
     CURRENCY("Währungsrechner", "Tageskurse der EZB", "💱", true),
     MOON("Mondphase", "Voll- und Neumond", "🌙", true),
-    JOKE("Witz des Tages", "Bewerten und sammeln", "😄", false),
+    JOKE("Witz des Tages", "Bewerten und sammeln", "😄", true),
 }
