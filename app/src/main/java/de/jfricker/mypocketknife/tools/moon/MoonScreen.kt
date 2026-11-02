@@ -32,6 +32,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+import de.jfricker.mypocketknife.location.compass
 import java.time.Duration
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -125,8 +126,8 @@ fun MoonScreen(onBack: () -> Unit, vm: MoonViewModel = viewModel()) {
                     if (alt != null && az != null) {
                         HorizontalDivider(Modifier.padding(vertical = 6.dp))
                         Text(
-                            if (alt > 0) "Jetzt sichtbar: ${alt.roundToInt()}° über dem Horizont im ${MoonCalculator.compass(az)}"
-                            else "Jetzt unter dem Horizont (${MoonCalculator.compass(az)})",
+                            if (alt > 0) "Jetzt sichtbar: ${alt.roundToInt()}° über dem Horizont im ${compass(az)}"
+                            else "Jetzt unter dem Horizont (${compass(az)})",
                         )
                     }
                 }

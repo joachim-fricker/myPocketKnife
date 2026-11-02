@@ -1,4 +1,4 @@
-package de.jfricker.mypocketknife.tools.moon
+package de.jfricker.mypocketknife.location
 
 import android.Manifest
 import android.annotation.SuppressLint

@@ -124,11 +124,4 @@ object MoonCalculator {
             else -> if (phase < 0) "Zunehmender Mond" else "Abnehmender Mond"
         }
     }
-
-    /** 0° = N, 90° = O … in 8 Richtungen */
-    fun compass(azimuth: Double): String {
-        val names = listOf("Norden", "Nordosten", "Osten", "Südosten", "Süden", "Südwesten", "Westen", "Nordwesten")
-        val i = (((azimuth % 360 + 360) % 360 + 22.5) / 45).toInt() % 8
-        return names[i]
-    }
 }

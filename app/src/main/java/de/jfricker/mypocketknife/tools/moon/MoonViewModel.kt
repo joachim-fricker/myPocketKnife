@@ -3,6 +3,8 @@ package de.jfricker.mypocketknife.tools.moon
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import de.jfricker.mypocketknife.location.LocationHelper
+import de.jfricker.mypocketknife.location.SavedLocation
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow

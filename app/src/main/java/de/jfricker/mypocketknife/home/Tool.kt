@@ -7,7 +7,9 @@ enum class Tool(
     val icon: String,
     val available: Boolean,
 ) {
-    CURRENCY("Währungsrechner", "Tageskurse der EZB", "💱", true),
+    INCLINE("Neigungsmesser", "Hangsteilheit messen", "📐", true),
+    CURRENCY("Währungsrechner", "Tageskurse, ~170 Währungen", "💱", true),
     MOON("Mondphase", "Voll- und Neumond", "🌙", true),
+    SUN("Sonne", "Goldene & blaue Stunde", "🌅", true),
     JOKE("Witz des Tages", "Bewerten und sammeln", "😄", true),
 }
