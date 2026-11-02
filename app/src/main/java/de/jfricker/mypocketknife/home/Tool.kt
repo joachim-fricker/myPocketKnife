@@ -8,6 +8,6 @@ enum class Tool(
     val available: Boolean,
 ) {
     CURRENCY("Währungsrechner", "Tageskurse der EZB", "💱", true),
-    MOON("Mondphase", "Voll- und Neumond", "🌙", false),
+    MOON("Mondphase", "Voll- und Neumond", "🌙", true),
     JOKE("Witz des Tages", "Bewerten und sammeln", "😄", false),
 }
