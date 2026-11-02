@@ -8,6 +8,7 @@ enum class Tool(
     val available: Boolean,
 ) {
     INCLINE("Neigungsmesser", "Hangsteilheit messen", "📐", true),
+    TODO("Listen", "Todo & Einkauf", "📝", true),
     CURRENCY("Währungsrechner", "Tageskurse, ~170 Währungen", "💱", true),
     MOON("Mondphase", "Voll- und Neumond", "🌙", true),
     SUN("Sonne", "Goldene & blaue Stunde", "🌅", true),

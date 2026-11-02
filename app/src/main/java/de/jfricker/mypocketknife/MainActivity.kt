@@ -18,6 +18,7 @@ import de.jfricker.mypocketknife.tools.incline.InclineScreen
 import de.jfricker.mypocketknife.tools.joke.JokeScreen
 import de.jfricker.mypocketknife.tools.moon.MoonScreen
 import de.jfricker.mypocketknife.tools.sun.SunScreen
+import de.jfricker.mypocketknife.tools.todo.TodoScreen
 import de.jfricker.mypocketknife.ui.theme.MyPocketKnifeTheme
 
 class MainActivity : ComponentActivity() {
@@ -61,5 +62,6 @@ fun PocketKnifeApp() {
         Tool.SUN -> SunScreen(onBack = back)
         Tool.INCLINE -> InclineScreen(onBack = back)
         Tool.JOKE -> JokeScreen(onBack = back)
+        Tool.TODO -> TodoScreen(onBack = back)
     }
 }
