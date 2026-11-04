@@ -14,6 +14,8 @@ import androidx.compose.runtime.setValue
 import de.jfricker.mypocketknife.home.HomeScreen
 import de.jfricker.mypocketknife.home.Tool
 import de.jfricker.mypocketknife.tools.currency.CurrencyScreen
+import de.jfricker.mypocketknife.tools.dice.DiceGamesScreen
+import de.jfricker.mypocketknife.tools.games.GamesScreen
 import de.jfricker.mypocketknife.tools.incline.InclineScreen
 import de.jfricker.mypocketknife.tools.joke.JokeScreen
 import de.jfricker.mypocketknife.tools.moon.MoonScreen
@@ -63,5 +65,7 @@ fun PocketKnifeApp() {
         Tool.INCLINE -> InclineScreen(onBack = back)
         Tool.JOKE -> JokeScreen(onBack = back)
         Tool.TODO -> TodoScreen(onBack = back)
+        Tool.GAMES -> GamesScreen(onBack = back)
+        Tool.DICE -> DiceGamesScreen(onBack = back)
     }
 }

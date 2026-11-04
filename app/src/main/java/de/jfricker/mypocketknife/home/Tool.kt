@@ -13,4 +13,6 @@ enum class Tool(
     MOON("Mondphase", "Voll- und Neumond", "🌙", true),
     SUN("Sonne", "Goldene & blaue Stunde", "🌅", true),
     JOKE("Witz des Tages", "Bewerten und sammeln", "😄", true),
+    GAMES("Spiele", "SameGame, Bejeweled, Invaders, Snake, Asteroids", "🎮", true),
+    DICE("Würfelspiele", "Kniffel, Yatzy, 10000, Mensch ärgere dich nicht", "🎲", true),
 }
